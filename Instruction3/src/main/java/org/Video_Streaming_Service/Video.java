@@ -7,13 +7,8 @@ public abstract class Video {
         this.title=title;
         this.duration=duration;
     }
-    public String getInfo(){
-        String info= String.format("----------------------\n"+"\n Title : "+getTitle()+"\nDuration time is "+ getDuration());
-        return info;
-    }
-    public int getDuration(){
-        return duration;
-    }
+    public abstract String getInfo();
+
     public void setDuration(int duration){
         this.duration=duration;
     }

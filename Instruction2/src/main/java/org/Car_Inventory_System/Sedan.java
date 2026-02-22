@@ -6,5 +6,8 @@ public class Sedan extends Car {
 
     }
 
-
+    @Override
+    public String getInfo(){
+        return String.format("Vin number is " + getVinNumber() + ".\nMake is "+ getMake() +"\nmodel is " + getModel() + "\nmileage is "+getMileage());
+    }
 }

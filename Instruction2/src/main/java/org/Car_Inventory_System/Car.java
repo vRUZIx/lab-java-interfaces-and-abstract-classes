@@ -11,10 +11,7 @@ public abstract class Car {
         this.model=model;
         this.mileage=mileage;
     }
-    public String getInfo(){
-        String info= String.format("Vin number is " + getVinNumber() + ".\nMake is "+ make +"\nmodel is " + model + "\nmileage is "+mileage);
-        return info;
-    }
+    public abstract String getInfo();
 
     public void setVinNumber(String vinNumber){
         vinNumber=vinNumber.toUpperCase();
