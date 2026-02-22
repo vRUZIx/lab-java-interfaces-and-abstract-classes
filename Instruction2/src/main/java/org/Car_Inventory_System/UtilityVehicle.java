@@ -1,4 +1,4 @@
-package org.example;
+package org.Car_Inventory_System;
 
 public class UtilityVehicle extends Car{
     boolean isFourWheelVehicle;
@@ -6,16 +6,15 @@ public class UtilityVehicle extends Car{
         super(vinNumber, make ,model ,mileage);
         this.isFourWheelVehicle=isFourWheelVehicle;
     }
-    public String getFourWheelVehicle(){
-        if(isFourWheelVehicle){return "This utiliyVehicle has 4 wheels";}
-        else{return "This utilityVehicle  has not 4 wheel";}
+    public boolean getFourWheelVehicle(){
+        return isFourWheelVehicle;
     }
     public void setFourWheelVehicle(boolean isFourWheelVehicle){
         this.isFourWheelVehicle=isFourWheelVehicle;
     }
     @Override
     public String getInfo(){
-        String info= String.format("Vin number is " + getVinNumber() + ".\nMake is "+ getMake() +"\nmodel is " + getModel() + "\nmileage is "+getMileage() +"\n" +getFourWheelVehicle());
+        String info= String.format("Vin number is " + getVinNumber() + ".\nMake is "+ getMake() +"\nmodel is " + getModel() + "\nmileage is "+getMileage() +"\nIs it 4 wheel vehicle : " +getFourWheelVehicle());
         return info;
     }
 }

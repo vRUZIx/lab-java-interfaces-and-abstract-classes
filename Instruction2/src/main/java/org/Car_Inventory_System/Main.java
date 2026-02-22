@@ -1,4 +1,4 @@
-package org.example;
+package org.Car_Inventory_System;
 
 public class Main {
     public static void main(String[] args) {

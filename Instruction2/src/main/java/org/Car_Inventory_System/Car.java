@@ -1,4 +1,4 @@
-package org.example;
+package org.Car_Inventory_System;
 
 public abstract class Car {
     private String vinNumber;
@@ -37,11 +37,9 @@ public abstract class Car {
     public void setModel(String model){
         this.model=model;
     }
-    public String getModel(){
-        return model;
+    public String getModel() {return model;
     }
-    public void setMileage(int mileage){
-        this.mileage=mileage;
+    public void setMileage(int mileage){this.mileage=mileage;
     }
     public int getMileage(){
         return mileage;

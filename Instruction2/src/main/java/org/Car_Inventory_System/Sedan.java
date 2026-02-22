@@ -1,4 +1,4 @@
-package org.example;
+package org.Car_Inventory_System;
 
 public class Sedan extends Car {
     public Sedan(String vinNumber,String make,String model,int mileage){
