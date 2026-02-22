@@ -6,21 +6,23 @@ public abstract class Car {
     private String model;
     private int mileage;
     public Car(String vinNumber,String make,String model,int mileage){
-        this.vinNumber=getVinNumber();
+        this.vinNumber=vinNumber;
         this.make=make;
         this.model=model;
         this.mileage=mileage;
     }
     public String getInfo(){
-        String info= String.format("Vin number is " + vinNumber + ".\nMake is "+ make +"\nmodel is " + model + "\nmileage is "+mileage);
+        String info= String.format("Vin number is " + getVinNumber() + ".\nMake is "+ make +"\nmodel is " + model + "\nmileage is "+mileage);
         return info;
     }
 
     public void setVinNumber(String vinNumber){
-        if(vinNumber.length()==17 && !vinNumber.contains("Q,I,O")){
+        vinNumber=vinNumber.toUpperCase();
+        if(vinNumber.length()==17 && vinNumber.contains("O,Q,I")){
         this.vinNumber=vinNumber;}
         else{
-            System.err.println("Vin code is invalid");
+            this.vinNumber="invalid";
+            System.err.println("Vin code is invalid .Try to set again.");
         }
     }
     public String getVinNumber(){

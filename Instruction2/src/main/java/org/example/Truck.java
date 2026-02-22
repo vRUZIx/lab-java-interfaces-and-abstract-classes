@@ -14,7 +14,7 @@ public class Truck extends Car{
     }
     @Override
     public String getInfo(){
-        String info= String.format("Vin number is " + getVinNumber() + ".\nMake is "+ getMake() +"\nmodel is " + getModel() + "\nmileage is "+getMileage() +"\nWing capacity is" +getTowingCapacity());
+        String info= String.format("Vin number is " + getVinNumber() + ".\nMake is "+ getMake() +"\nmodel is " + getModel() + "\nmileage is "+getMileage() +"\nWing capacity is " +getTowingCapacity());
         return info;
     }
 }

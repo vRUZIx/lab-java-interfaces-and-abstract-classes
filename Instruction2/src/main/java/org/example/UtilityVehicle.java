@@ -7,7 +7,7 @@ public class UtilityVehicle extends Car{
         this.isFourWheelVehicle=isFourWheelVehicle;
     }
     public String getFourWheelVehicle(){
-        if(isFourWheelVehicle){return "This utiliyVehicle has 4 wheel";}
+        if(isFourWheelVehicle){return "This utiliyVehicle has 4 wheels";}
         else{return "This utilityVehicle  has not 4 wheel";}
     }
     public void setFourWheelVehicle(boolean isFourWheelVehicle){
